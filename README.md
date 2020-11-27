@@ -8,18 +8,17 @@ The application downloads a list of songs from YouTube to a new directory on you
 
 ## Table of Contents
 
-1. [Python Libraries and Packages Required](#python-libraries-and-packages-required)
-2. [Formatting the List of Songs](#formatting-the-list-of-songs)
+1. [Additional Python Libraries and Packages Required](#additional-python-libraries-and-packages-required)
+2. [Formatting the List of Songs File](#formatting-the-list-of-songs-file)
 
-## Python Libraries and Packages Required
-
-* tkinter 
+## Additional Python Libraries and Packages Required
+ 
 * Pillow
 * urllib
 * pytube
 * moviepy
 
-## Formatting the List of Songs
+## Formatting the List of Songs File
 
 Each line of the file containing the list of songs must be in the format “artist_name : song_name”. The following image shows an example of a valid list of songs:
 
