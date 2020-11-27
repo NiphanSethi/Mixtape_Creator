@@ -8,15 +8,20 @@ The application downloads a list of songs from YouTube to a new directory on you
 
 ## Table of Contents
 
-1. [Additional Python Libraries and Packages Required](#additional-python-libraries-and-packages-required)
-2. [Formatting the List of Songs File](#formatting-the-list-of-songs-file)
+1. [Purpose of the Project](#purpose-of-the-project) 
+2. [Additional Python Libraries and Packages Required](#additional-python-libraries-and-packages-required)
+3. [Formatting the List of Songs File](#formatting-the-list-of-songs-file)
+
+## Purpose of the Project
+
 
 ## Additional Python Libraries and Packages Required
  
-* Pillow
-* urllib
+* pillow
 * pytube
 * moviepy
+
+<em>Please install all of these libraries/packages prior to running the application</em>
 
 ## Formatting the List of Songs File
 
