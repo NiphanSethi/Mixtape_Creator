@@ -8,12 +8,13 @@ The application downloads a list of songs from YouTube to a new directory on you
 
 ## Table of Contents
 
-1. [Purpose of the Project](#purpose-of-the-project) 
+1. [The Purpose of the Project](#the-purpose-of-the-project) 
 2. [Additional Python Libraries and Packages Required](#additional-python-libraries-and-packages-required)
 3. [Formatting the List of Songs File](#formatting-the-list-of-songs-file)
 
-## Purpose of the Project
+## The Purpose of the Project
 
+The purpose of this project is to enable quick downloads of a list of songs so they can be accessed offline. These songs are organized into a directory with any valid name/path specified on your local machine, making them easily accessible. It is particularly useful when preparing for road trips and air travel. An advantage of utilizing this application over a streaming service such as Spotify is that you can even download audio recordings of live performances that are available on YouTube. This can be accomplished by adding the keyword “Live” after the song name. 
 
 ## Additional Python Libraries and Packages Required
  
