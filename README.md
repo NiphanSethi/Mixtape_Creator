@@ -10,7 +10,7 @@ The application downloads a list of songs from YouTube to a new directory on you
 
 1. [The Purpose of the Project](#the-purpose-of-the-project) 
 2. [Application Demo](#application-demo)
-3. [Additional Python Libraries and Packages Required](#additional-python-libraries-and-packages-required)
+3. [Getting Started](#getting-started)
 4. [Formatting the List of Songs File](#formatting-the-list-of-songs-file)
 
 ## The Purpose of the Project
@@ -21,14 +21,16 @@ The purpose of this project is to enable quick downloads of a list of songs so t
 
 Click here to view a demo of the application
 
-## Additional Python Libraries and Packages Required
- 
+## Getting Started
+
+<em>Please install all of these additional Python libraries/packages prior to running the application:</em>
+
 * pillow (8.0.1)
 * pytube (10.0.0)
 * numpy (1.19.3)
 * moviepy (1.0.3)
 
-<em>Please install all of these libraries/packages prior to running the application</em>
+Also, install the custom font "PermanentMarker-Regular.ttf" provided in "./res" on your local machine
 
 ## Formatting the List of Songs File
 
