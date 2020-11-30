@@ -56,8 +56,8 @@ class MixtapeCreator:
         print(audio_filename)
         print(video_url)
         yt = YouTube(video_url)
-        audio = yt.streams.filter(only_audio = True).first()
-        audio.download(output_path = mixtape_dir, filename = audio_filename)
+        video = yt.streams.first()
+        video.download(output_path = mixtape_dir, filename = audio_filename)
     
     @staticmethod
     def convert_to_mp3(mixtape_dir, audio_filename):
