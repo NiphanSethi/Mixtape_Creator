@@ -23,8 +23,7 @@ Please install all of these additional Python libraries/packages prior to runnin
 
 * pillow (8.0.1)
 * pytube (10.0.0)
-* numpy (1.19.3)
-* moviepy (1.0.3)
+* youtube-dl (2020.12.7)
 
 Also, install the custom font "PermanentMarker-Regular.ttf" provided in "./res" on your local machine
 
