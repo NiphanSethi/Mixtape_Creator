@@ -2,7 +2,6 @@ try:
     import tkinter as tk
     import os
     from urllib import request, parse
-    from pytube import YouTube
     import youtube_dl
 
 except Exception as e:
