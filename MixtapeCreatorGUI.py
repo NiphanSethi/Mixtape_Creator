@@ -57,7 +57,7 @@ class MixtapeCreatorGUI:
         # do not allow window to be resized
         self.root.resizable(False, False)
         # set GUI description
-        self.root.title("Mixtape Creator - Version 1 (By Niphan Sethi)")
+        self.root.title("Mixtape Creator - Version 2 (By Niphan Sethi)")
         # position window to open at center of screen
         self.set_window_position()
         # create a canvas and pack it to root (used as background of GUI)

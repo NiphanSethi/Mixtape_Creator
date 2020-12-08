@@ -3,7 +3,7 @@ try:
     import os
     from urllib import request, parse
     from pytube import YouTube
-    from moviepy import editor
+    import youtube_dl
 
 except Exception as e:
     print("Please install the required modules to execute the program: {}".format(e))
@@ -53,20 +53,19 @@ class MixtapeCreator:
     
     @staticmethod
     def download_vid(mixtape_dir, audio_filename, video_url):
+        
+        ydl_opts = {
+            "format" : "bestaudio/best",
+            "extractaudio" : True,
+            "audioformat" : "mp3",
+            "outtmpl" : mixtape_dir + '/' + audio_filename + ".mp3"
+        }
+
         print(audio_filename)
         print(video_url)
-        yt = YouTube(video_url)
-        video = yt.streams.first()
-        video.download(output_path = mixtape_dir, filename = audio_filename)
-    
-    @staticmethod
-    def convert_to_mp3(mixtape_dir, audio_filename):
-            mp4_dir = mixtape_dir + '/' + audio_filename + ".mp4"
-            mp3_dir = mp4_dir.replace(".mp4", ".mp3")
-            audioClip = editor.AudioFileClip(mp4_dir)
-            audioClip.write_audiofile(mp3_dir)
-            audioClip.close()
-            os.remove(mp4_dir)
+        
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([video_url])
     
     @staticmethod
     def update(root, state, message):
@@ -93,10 +92,8 @@ class MixtapeCreator:
                 audio_filename = audio_filename.replace("  ", "-")
                 # Determine url of youtube video
                 video_url = MixtapeCreator.determine_url(line.replace(':', '-'))
-                # Download audio of Youtube Video
+                # Download audio of Youtube Video in mp3 format
                 MixtapeCreator.download_vid(mixtape_dir, audio_filename, video_url)
-                # Convert mp4 file to mp3 file and remove mp4 file from corresponding directory
-                MixtapeCreator.convert_to_mp3(mixtape_dir, audio_filename)
                 # Increment counter by 1 
                 num_downloaded += 1
                 # Update GUI to show number of songs successfully downloaded
