@@ -22,7 +22,6 @@ The purpose of this project is to enable quick downloads of a list of songs so t
 Please install all of these additional Python libraries/packages prior to running the application:
 
 * pillow (8.0.1)
-* pytube (10.0.0)
 * youtube-dl (2020.12.7)
 
 Also, install the custom font "PermanentMarker-Regular.ttf" provided in "./res" on your local machine
